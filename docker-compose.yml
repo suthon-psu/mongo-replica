@@ -1,0 +1,23 @@
+version: '3'
+services:
+  mongo1:
+   container_name: mongo1
+   image: mongo
+   command: mongod --config /etc/mongod.conf
+   volumes:
+    - ./mongo1.conf:/etc/mongod.conf
+    - ./mongodb1:/var/lib/mongodb
+  mongo2:
+   container_name: mongo2
+   image: mongo
+   command: mongod --config /etc/mongod.conf
+   volumes:
+    - ./mongo2.conf:/etc/mongod.conf
+    - ./mongodb2:/var/lib/mongodb
+  mongo3:
+   container_name: mongo3
+   image: mongo
+   command: mongod --config /etc/mongod.conf
+   volumes:
+    - ./mongo3.conf:/etc/mongod.conf
+    - ./mongodb3:/var/lib/mongodb
