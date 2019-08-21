@@ -1,5 +1,5 @@
 # Run
-... make sure that mongodb1, mongodb2, mongodb3 directories are created.
+make sure that mongodb1, mongodb2, mongodb3 directories are created.
 ```
 >> docker-compose up -d
 ```
@@ -7,6 +7,7 @@
 ```
 >> docker exec -it mongo1 mongo
 ```
+Run the following script in mongo shell.
 ```javascript
 rs.initiate( {
    _id : "rs0",
